@@ -1,3 +1,6 @@
+package work;
+
+import base.DataBase;
 import entity.Human;
 
 import java.util.ArrayList;
@@ -7,18 +10,7 @@ import java.util.stream.Collectors;
 
 public class StreamMethod {
     public static void main(String[] args) {
-        List<Human> humans = new ArrayList<>();
-
-        humans.add(new Human("John", 25, 50000.0));
-        humans.add(new Human("Emily", 30, 60000.0));
-        humans.add(new Human("Michael", 35, 70000.0));
-        humans.add(new Human("Sophia", 40, 80000.0));
-        humans.add(new Human("William", 45, 90000.0));
-        humans.add(new Human("Olivia", 50, 100000.0));
-        humans.add(new Human("James", 55, 110000.0));
-        humans.add(new Human("Ava", 60, 120000.0));
-        humans.add(new Human("Benjamin", 65, 130000.0));
-        humans.add(new Human("Isabella", 70, 140000.0));
+        List<Human> humans = DataBase.getList();
 
 
         /** отфильтровать и после получить терминальным методом Лист отфильтрованных */
