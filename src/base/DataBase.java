@@ -18,7 +18,9 @@ public class DataBase {
         humans.add(new Human("James", 55, 110000.0));
         humans.add(new Human("Ava", 60, 120000.0));
         humans.add(new Human("Benjamin", 65, 130000.0));
-        humans.add(new Human("Isabella", 70, 140000.0));
+        humans.add(new Human("Isabella", 47, 47000.0));
+        humans.add(new Human("Samira", 30, 22000.0));
+        humans.add(new Human("Lia", 37, 40000.0));
 
         return humans;
     }
