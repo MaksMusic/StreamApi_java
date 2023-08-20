@@ -34,6 +34,5 @@ public class StreamFilter {
         //вывод
         humanList.forEach(System.out::println);
 
-
     }
 }
