@@ -10,6 +10,10 @@ public class DataBase {
         List<Human> humans = new ArrayList<>();
 
         humans.add(new Human("John", 25, 50000.0));
+        humans.add(new Human("John", 25, 50000.0));
+        humans.add(new Human("John", 25, 50000.0));
+        humans.add(new Human("John", 25, 50000.0));
+        humans.add(new Human("John", 25, 50000.0));
         humans.add(new Human("Emily", 30, 60000.0));
         humans.add(new Human("Michael", 35, 70000.0));
         humans.add(new Human("sophia", 40, 80000.0));
