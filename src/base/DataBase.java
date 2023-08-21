@@ -11,7 +11,7 @@ public class DataBase {
 
         humans.add(new Human("John", 25, 50000.0));
         humans.add(new Human("John", 25, 50000.0));
-        humans.add(new Human("John", 25, 50000.0));
+        humans.add(new Human("John", 25, 70000.0));
         humans.add(new Human("John", 25, 50000.0));
         humans.add(new Human("John", 25, 50000.0));
         humans.add(new Human("Emily", 30, 60000.0));
