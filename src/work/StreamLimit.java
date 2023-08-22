@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class StreamLimit {
     public static void main(String[] args) {
-        /** получить из Листа  лист где отсаються только числа выше 10 и до 5 чисел */
+        /** РїРѕР»СѓС‡РёС‚СЊ РёР· Р›РёСЃС‚Р°  Р»РёСЃС‚ РіРґРµ РѕС‚СЃР°СЋС‚СЊСЃСЏ С‚РѕР»СЊРєРѕ С‡РёСЃР»Р° РІС‹С€Рµ 10 Рё РґРѕ 5 С‡РёСЃРµР» */
         List<Integer> integerList = new ArrayList<>();
         integerList.add(7);
         integerList.add(4);
@@ -17,7 +17,10 @@ public class StreamLimit {
         integerList.add(1);
         integerList.add(2);
 
-       integerList =  integerList.stream().filter(e-> e>10).limit(5).collect(Collectors.toList());
+       integerList =  integerList.stream().
+               filter(e-> e>10)
+               .limit(5)
+               .collect(Collectors.toList());
         System.out.println(integerList);
     }
 }
