@@ -8,7 +8,7 @@ import java.util.List;
 
 public class StreamMinAndMax {
     public static void main(String[] args) {
-        /** получить из стрима студента с минимальным возрастом и максимальным */
+        /** РїРѕР»СѓС‡РёС‚СЊ РёР· СЃС‚СЂРёРјР° СЃС‚СѓРґРµРЅС‚Р° СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј РІРѕР·СЂР°СЃС‚РѕРј Рё РјР°РєСЃРёРјР°Р»СЊРЅС‹Рј */
 
         List<Human> humanList = DataBase.getList();
 

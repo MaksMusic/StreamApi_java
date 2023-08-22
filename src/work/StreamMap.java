@@ -9,8 +9,8 @@ import java.util.stream.Stream;
 
 public class StreamMap {
     public static void main(String[] args) {
-        /** поменять значение в листе вместо имен их длинны привденные к типу стринг
-         * не меняет оригинал коллекции возвращает новую может и сдругим типом данных*/
+        /** РїРѕРјРµРЅСЏС‚СЊ Р·РЅР°С‡РµРЅРёРµ РІ Р»РёСЃС‚Рµ РІРјРµСЃС‚Рѕ РёРјРµРЅ РёС… РґР»РёРЅРЅС‹ РїСЂРёРІРґРµРЅРЅС‹Рµ Рє С‚РёРїСѓ СЃС‚СЂРёРЅРі
+         * РЅРµ РјРµРЅСЏРµС‚ РѕСЂРёРіРёРЅР°Р» РєРѕР»Р»РµРєС†РёРё РІРѕР·РІСЂР°С‰Р°РµС‚ РЅРѕРІСѓСЋ РјРѕР¶РµС‚ Рё СЃРґСЂСѓРіРёРј С‚РёРїРѕРј РґР°РЅРЅС‹С…*/
 
         List<String> listName = new ArrayList<>();
         listName.add("Tom");
@@ -19,30 +19,30 @@ public class StreamMap {
         listName.add("Tarina");
         listName.add("Selena");
 
-        //без стримов
+        //Р±РµР· СЃС‚СЂРёРјРѕРІ
 //        for (int i = 0; i < listName.size(); i++) {
 //            listName.set(i,String.valueOf(listName.get(i).length()));
 //        }
 
-        //со стримами вернуть лист строк
+        //СЃРѕ СЃС‚СЂРёРјР°РјРё РІРµСЂРЅСѓС‚СЊ Р»РёСЃС‚ СЃС‚СЂРѕРє
         List<String> stringList = listName.stream()
                 .map(name -> String.valueOf(name.length()))
                 .collect(Collectors.toList());
 
-        //со стримами вернуть лист строк
+        //СЃРѕ СЃС‚СЂРёРјР°РјРё РІРµСЂРЅСѓС‚СЊ Р»РёСЃС‚ СЃС‚СЂРѕРє
         List<Integer> intList = listName.stream()
                 .map(name -> name.length())
                 .collect(Collectors.toList());
 
-        //вывод
+        //РІС‹РІРѕРґ
         System.out.println(listName);
         listName.stream().forEach(System.out::print);
         System.out.println();
 
 
-        /**  поток стрим из массива после каждый елемент проверить на то делиться ли он на 3 без остатка
-         * если делиться вместо него поместить число деленное на 3 иначе оставить текущее число
-         * после получить из стрима массив*/
+        /**  РїРѕС‚РѕРє СЃС‚СЂРёРј РёР· РјР°СЃСЃРёРІР° РїРѕСЃР»Рµ РєР°Р¶РґС‹Р№ РµР»РµРјРµРЅС‚ РїСЂРѕРІРµСЂРёС‚СЊ РЅР° С‚Рѕ РґРµР»РёС‚СЊСЃСЏ Р»Рё РѕРЅ РЅР° 3 Р±РµР· РѕСЃС‚Р°С‚РєР°
+         * РµСЃР»Рё РґРµР»РёС‚СЊСЃСЏ РІРјРµСЃС‚Рѕ РЅРµРіРѕ РїРѕРјРµСЃС‚РёС‚СЊ С‡РёСЃР»Рѕ РґРµР»РµРЅРЅРѕРµ РЅР° 3 РёРЅР°С‡Рµ РѕСЃС‚Р°РІРёС‚СЊ С‚РµРєСѓС‰РµРµ С‡РёСЃР»Рѕ
+         * РїРѕСЃР»Рµ РїРѕР»СѓС‡РёС‚СЊ РёР· СЃС‚СЂРёРјР° РјР°СЃСЃРёРІ*/
         int[] array = {1, 6, 7, 5, 3, 2, 9};
         int[] array1 = Arrays.stream(array).
                 map(element -> {
@@ -56,20 +56,20 @@ public class StreamMap {
         System.out.println(Arrays.toString(array1));
 
 
-        /** получили Set строк а на выходе получили set из Integer */
+        /** РїРѕР»СѓС‡РёР»Рё Set СЃС‚СЂРѕРє Р° РЅР° РІС‹С…РѕРґРµ РїРѕР»СѓС‡РёР»Рё set РёР· Integer */
         Set<String> stringSet = new TreeSet<>(listName);
         System.out.println(stringSet);
 
         Set<Integer> integerSet = stringSet.stream()
                 .map(element -> element.length())
-                .collect(Collectors.toSet()); //или Collectors.toList()
+                .collect(Collectors.toSet()); //РёР»Рё Collectors.toList()
 
         System.out.println(integerSet);
 
 
 
-        /** работа с объектами а именно изменение в листе (замена)
-         * добавление к salary (зарплате) каждому по 5000 */
+        /** СЂР°Р±РѕС‚Р° СЃ РѕР±СЉРµРєС‚Р°РјРё Р° РёРјРµРЅРЅРѕ РёР·РјРµРЅРµРЅРёРµ РІ Р»РёСЃС‚Рµ (Р·Р°РјРµРЅР°)
+         * РґРѕР±Р°РІР»РµРЅРёРµ Рє salary (Р·Р°СЂРїР»Р°С‚Рµ) РєР°Р¶РґРѕРјСѓ РїРѕ 5000 */
         List<Human> humans = DataBase.getList();
         List<Human> humanList = humans.stream()
                 .map(human -> new Human(human.getName(), human.getAge(), human.getSalary() + 5000))

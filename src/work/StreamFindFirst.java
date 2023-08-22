@@ -6,7 +6,7 @@ import java.util.Optional;
 
 public class StreamFindFirst {
     public static void main(String[] args) {
-        /** получить из Листа чисел первое число которое подходит по условию 5 */
+        /** РїРѕР»СѓС‡РёС‚СЊ РёР· Р›РёСЃС‚Р° С‡РёСЃРµР» РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ РєРѕС‚РѕСЂРѕРµ РїРѕРґС…РѕРґРёС‚ РїРѕ СѓСЃР»РѕРІРёСЋ 5 */
         List<Integer> integerList = new ArrayList<>();
         integerList.add(7);
         integerList.add(4);

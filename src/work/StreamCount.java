@@ -6,10 +6,10 @@ public class StreamCount {
     public static void main(String[] args) {
         int [] arr2 = {6,7,8,9,10,7,8,5};
 
-        //количество  элементов в стриме
+        //РєРѕР»РёС‡РµСЃС‚РІРѕ  СЌР»РµРјРµРЅС‚РѕРІ РІ СЃС‚СЂРёРјРµ
         System.out.println(Arrays.stream(arr2).count());
 
-        //количество не повторяющихся элементов в стриме
+        //РєРѕР»РёС‡РµСЃС‚РІРѕ РЅРµ РїРѕРІС‚РѕСЂСЏСЋС‰РёС…СЃСЏ СЌР»РµРјРµРЅС‚РѕРІ РІ СЃС‚СЂРёРјРµ
         System.out.println(Arrays.stream(arr2).distinct().count());
 
     }

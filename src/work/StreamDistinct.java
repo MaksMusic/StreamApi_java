@@ -23,7 +23,7 @@ public class StreamDistinct {
         System.out.println(integerList);
 
 
-        //с объектами
+        //СЃ РѕР±СЉРµРєС‚Р°РјРё
         List<Human> humans = DataBase.getList();
         System.out.println(humans.size());
 

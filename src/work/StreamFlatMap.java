@@ -20,7 +20,7 @@ public class StreamFlatMap {
         company2.getEmployee(new Employee("Sin", 170_000));
 
 
-        //áåç ñòðèìà âûâîä
+        //Ð±ÐµÐ· ÑÑ‚Ñ€Ð¸Ð¼Ð° Ð²Ñ‹Ð²Ð¾Ð´
         for (Company company : companies) {
             System.out.println(company.getName());
             for (Employee employee : company.employeeList) {
@@ -29,7 +29,7 @@ public class StreamFlatMap {
         }
         System.out.println();
 
-        /** âûâåñòè âñåõ ñîòðóäíèêîâ êîìïàíèé óêàçàâ òàê æå íàçâàíèå êîìïàíèè*/
+        /** Ð²Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð²ÑÐµÑ… ÑÐ¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¾Ð² ÐºÐ¾Ð¼Ð¿Ð°Ð½Ð¸Ð¹ ÑƒÐºÐ°Ð·Ð°Ð² Ñ‚Ð°Ðº Ð¶Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ ÐºÐ¾Ð¼Ð¿Ð°Ð½Ð¸Ð¸*/
         companies.stream().peek(c -> System.out.println(c.getName()))
                 .flatMap(company -> company.employeeList.stream())
                 .forEach(System.out::println);

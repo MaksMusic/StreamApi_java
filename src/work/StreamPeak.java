@@ -14,11 +14,11 @@ public class StreamPeak {
         integerList.add(6);
         integerList.add(11);
 
-        //ïîäñ÷èòàòü íå ïîâòîğÿşùèå ıëåìåíòû è ïî õîäó âûâîäèòü èõ
+        //Ğ¿Ğ¾Ğ´ÑÑ‡Ğ¸Ñ‚Ğ°Ñ‚ÑŒ Ğ½Ğµ Ğ¿Ğ¾Ğ²Ñ‚Ğ¾Ñ€ÑÑÑ‰Ğ¸Ğµ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ñ‹ Ğ¸ Ğ¿Ğ¾ Ñ…Ğ¾Ğ´Ñƒ Ğ²Ñ‹Ğ²Ğ¾Ğ´Ğ¸Ñ‚ÑŒ Ğ¸Ñ…
         System.out.println(integerList.stream().distinct().peek(System.out::println).count());
 
         System.out.println();
-        //ïîäñ÷èòàòü ñóììó íå ïîâòîğÿşùèõñÿ ıëåìåíòîâ è ïî õîäó âûâîäèòü èõ
+        //Ğ¿Ğ¾Ğ´ÑÑ‡Ğ¸Ñ‚Ğ°Ñ‚ÑŒ ÑÑƒĞ¼Ğ¼Ñƒ Ğ½Ğµ Ğ¿Ğ¾Ğ²Ñ‚Ğ¾Ñ€ÑÑÑ‰Ğ¸Ñ…ÑÑ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ² Ğ¸ Ğ¿Ğ¾ Ñ…Ğ¾Ğ´Ñƒ Ğ²Ñ‹Ğ²Ğ¾Ğ´Ğ¸Ñ‚ÑŒ Ğ¸Ñ…
         System.out.println(integerList.stream().distinct().peek(System.out::println).reduce((a,e)-> a += e).get() );
 
     }
