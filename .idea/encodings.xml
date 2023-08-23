@@ -13,6 +13,7 @@
     <file url="file://$PROJECT_DIR$/src/work/StreamFilter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/work/StreamFindFirst.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/work/StreamFlatMap.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/work/StreamLimit.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/work/StreamMap.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/work/StreamMethod.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/work/StreamMinAndMax.java" charset="UTF-8" />
