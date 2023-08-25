@@ -10,26 +10,52 @@ import java.util.stream.Collectors;
 public class StreamMapToInt {
     public static void main(String[] args) {
 
-        //   пример использования mapToInt для преобразования списка строк в список целых чисел:
-
+        //   РїСЂРёРјРµСЂ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ mapToInt РґР»СЏ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ СЃРїРёСЃРєР° СЃС‚СЂРѕРє РІ СЃРїРёСЃРѕРє С†РµР»С‹С… С‡РёСЃРµР»:
         List<String> stringList = Arrays.asList("1", "2", "3", "4", "5");
 
         List<Integer> intList = stringList.stream()
                 .mapToInt(Integer::parseInt)
                 .boxed()
                 .collect(Collectors.toList());
-
         System.out.println(intList); // [1, 2, 3, 4, 5]
 
 
+        /** РЅР°Р№С‚Рё СЃСѓРјРјСѓ Р·РЅР°С‡РµРЅРёР№ */
+       int sum = stringList.stream()
+                .mapToInt(Integer::parseInt)
+                .sum();
+        System.out.println(sum);
 
 
-/** найти сумму зарплат всех сотрудников компаний */
-//        companies это лист объектов компаний и
-//        в каждом объекте есть лист сотрудников employeeList
+        /** РЅР°Р№С‚Рё РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ */
+        int max = stringList.stream()
+                .mapToInt(Integer::parseInt)
+                .max().getAsInt();
+        System.out.println(sum);
+
+
+        /** РЅР°Р№С‚Рё РјРёРЅРёРјР°Р»СЊРЅРѕ Р·РЅР°С‡РµРЅРёРµ */
+        int min = stringList.stream()
+                .mapToInt(Integer::parseInt)
+                .min().getAsInt();
+        System.out.println(sum);
+
+
+        /** РЅР°Р№С‚Рё СЃСЂРµРґРЅРµРµ Р·РЅР°С‡РµРЅРёРµ */
+        double avg = stringList.stream()
+                .mapToInt(Integer::parseInt)
+                .average().getAsDouble();
+
+
+
+
+
+/** РЅР°Р№С‚Рё СЃСѓРјРјСѓ Р·Р°СЂРїР»Р°С‚ РІСЃРµС… СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РєРѕРјРїР°РЅРёР№ */
+//        companies СЌС‚Рѕ Р»РёСЃС‚ РѕР±СЉРµРєС‚РѕРІ РєРѕРјРїР°РЅРёР№ Рё
+//        РІ РєР°Р¶РґРѕРј РѕР±СЉРµРєС‚Рµ РµСЃС‚СЊ Р»РёСЃС‚ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ employeeList
 //        double sum = companies.stream()
 //                .flatMap(company -> company.employeeList.stream())
-//                // здесь предполагается, что у класса Employee есть метод getSalary() для получения зарплаты
+//                // Р·РґРµСЃСЊ РїСЂРµРґРїРѕР»Р°РіР°РµС‚СЃСЏ, С‡С‚Рѕ Сѓ РєР»Р°СЃСЃР° Employee РµСЃС‚СЊ РјРµС‚РѕРґ getSalary() РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ Р·Р°СЂРїР»Р°С‚С‹
 //                .mapToDouble(Employee::getSalary)
 //                .sum();
 
