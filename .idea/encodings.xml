@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/Main.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/base/DataBase.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/entity/Human.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/work/CreateSrteam.java" charset="UTF-8" />
@@ -16,10 +17,12 @@
     <file url="file://$PROJECT_DIR$/src/work/StreamLimit.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/work/StreamMap.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/work/StreamMapToInt.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/work/StreamMethod.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/work/StreamMinAndMax.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/work/StreamParallel.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/work/StreamPeak.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/work/StreamReduce.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/work/StreamSkip.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/work/StreamSorted.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/work/StreamTasks.java" charset="UTF-8" />
   </component>
 </project>

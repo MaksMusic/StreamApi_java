@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class StreamMethod {
+public class StreamTasks {
     public static void main(String[] args) {
         List<Human> humans = DataBase.getList();
 
@@ -68,6 +68,9 @@ public class StreamMethod {
                 .count();
 
         System.out.println("Людей старше " + age + " " + countHumanAgeOver);
+
+
+
 
     }
 
