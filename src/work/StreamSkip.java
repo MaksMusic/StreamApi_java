@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class StreamSkip {
     public static void main(String[] args) {
-        /** получить из Листа  лист где отсаються только числа после первых 5 */
+        /** РїРѕР»СѓС‡РёС‚СЊ РёР· Р›РёСЃС‚Р°  Р»РёСЃС‚ РіРґРµ РѕС‚СЃР°СЋС‚СЊСЃСЏ С‚РѕР»СЊРєРѕ С‡РёСЃР»Р° РїРѕСЃР»Рµ РїРµСЂРІС‹С… 5 */
         List<Integer> integerList = new ArrayList<>();
         integerList.add(7);
         integerList.add(4);

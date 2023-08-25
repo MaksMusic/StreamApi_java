@@ -6,7 +6,7 @@ import java.util.List;
 public class StreamParallel {
     public static void main(String[] args) {
 
-        /** умножить числа и получить сумму умножения всех чисел*/
+        /** СѓРјРЅРѕР¶РёС‚СЊ С‡РёСЃР»Р° Рё РїРѕР»СѓС‡РёС‚СЊ СЃСѓРјРјСѓ СѓРјРЅРѕР¶РµРЅРёСЏ РІСЃРµС… С‡РёСЃРµР»*/
         List<Integer> integerList = new ArrayList<>();
         integerList.add(7);
         integerList.add(4);
@@ -19,14 +19,14 @@ public class StreamParallel {
                 .reduce( (a,e) -> a * e ).get();
         System.out.println(result);
 
-        //при умножении результат равен
+        //РїСЂРё СѓРјРЅРѕР¶РµРЅРёРё СЂРµР·СѓР»СЊС‚Р°С‚ СЂР°РІРµРЅ
         int result2 = integerList.parallelStream()
                 .reduce( (a,e) -> a * e ).get();
         System.out.println(result);
 
 
 
-        /** делить числа */
+        /** РґРµР»РёС‚СЊ С‡РёСЃР»Р° */
         List<Double> list = new ArrayList<>();
         list.add(17.1);
         list.add(2.1);
@@ -39,7 +39,7 @@ public class StreamParallel {
                 .reduce( (a,e) -> a / e ).get();
         System.out.println(divisionResult);
 
-        //при делении результат разный
+        //РїСЂРё РґРµР»РµРЅРёРё СЂРµР·СѓР»СЊС‚Р°С‚ СЂР°Р·РЅС‹Р№
         double divisionResult2 = list.parallelStream()
                 .reduce( (a,e) -> a / e ).get();
         System.out.println(divisionResult2);
